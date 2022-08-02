@@ -163,6 +163,7 @@ private:
     std::string                   write_filename_;
 
     std::set<std::string>         currently_recording_;  //!< set of currenly recording topics
+    std::vector<boost::shared_ptr<ros::Subscriber>> subscribers_;
     int                           num_subscribers_;      //!< used for book-keeping of our number of subscribers
 
     int                           exit_code_;            //!< eventual exit code
